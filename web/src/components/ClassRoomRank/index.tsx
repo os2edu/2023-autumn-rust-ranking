@@ -169,7 +169,7 @@ const ClassRoomRank = (props: IProps) => {
                 最新数据更新时间:
                 {props.latestUpdatedAt && (
                   <span style={{ marginLeft: 10, fontWeight: 'bold' }}>
-                    {dayjs(props.latestUpdatedAt).format('YYYY-MM-DD HH:mm::ss')}
+                    {dayjs(props.latestUpdatedAt).format('YYYY-MM-DD HH:mm:ss')}
                   </span>
                 )}
               </span> : <></>
@@ -182,7 +182,7 @@ const ClassRoomRank = (props: IProps) => {
             </span>
             {props.latestUpdatedAt && (
               <span style={{ fontWeight: 'bold' }}>
-                {dayjs(props.latestUpdatedAt).format('YYYY-MM-DD HH:mm::ss')}
+                {dayjs(props.latestUpdatedAt).format('YYYY-MM-DD HH:mm:ss')}
               </span>
             )}
           </div> : <></>
