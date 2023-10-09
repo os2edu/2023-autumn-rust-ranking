@@ -4,7 +4,7 @@ name: GitHub Classroom Workflow
 
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '*/12 * * * *'
   push:
     branches:
       - main
