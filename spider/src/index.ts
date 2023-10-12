@@ -152,7 +152,7 @@ async function getWorksGrade(githubUsername: string, latest: any) {
 
         // Store grade to points variable.
         if(work in grade) {
-            grade[work] = points[0];
+            grade[work] = points[0]<=100?points[0] : 100;
             gradeDetails[work] = details;
         }
         console.log(`${githubUsername.padEnd(15)} ${points}`)
