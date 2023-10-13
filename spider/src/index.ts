@@ -188,7 +188,7 @@ async function getGrade() {
                 name: userInfo['data']['login'],
                 avatar: userInfo['data']['avatar_url'],
                 repo_url: repo['student_repository_url'],
-                grades: { main: repo['points_awarded'] },
+                grades: { main: Math.min(repo['points_awarded'], 100) },
                 details: "",
                 lastUpdateAt: new Date(repo['submission_timestamp']).getTime()
             };
